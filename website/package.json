@@ -1,0 +1,24 @@
+{
+  "name": "media-player",
+  "version": "1.0.0",
+  "description": "JavaScript Project",
+  "main": "index.ts",
+  "scripts": {
+    "start": "parcel index.html practice/index.html practice/**/*.html"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Luis Vargas <kluis0178@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.7.4"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "dependencies": {
+    "@nic-hawk/mediaplayer": "^1.0.0"
+  }
+}

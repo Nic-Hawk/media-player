@@ -1,0 +1,265 @@
+:root {
+  --rich-black-fogra-39: #111213ff;
+  --eerie-black: #212224ff;
+  --quick-silver: #a1a1a1ff;
+  --white: #ffffffff;
+  --blue-crayola: #2f71e8ff;
+  --cyan-process: #29b9f0ff;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--rich-black-fogra-39);
+  color: var(--cyan-process);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+header {
+  width: 100%;
+  text-align: center;
+  background-color: var(--eerie-black);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container {
+  max-width: 960px;
+  max-width: 100%;
+  margin: 1rem;
+
+}
+
+.video-container {
+  margin-top: .5rem;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.video-container {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.movie {
+  width: 100%;
+  border-radius: .8rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+.title > h3 {
+  margin: .5rem;
+}
+
+.title-2{
+  width: 100%;
+  text-align: center;
+}
+.playlist {
+  display: grid;
+  place-content: center;
+
+}
+
+.cardvideo {
+  background-color: var(--eerie-black);
+  border-radius: .8rem;
+  margin: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.reccomendation {
+  margin: 1rem;
+  display: flex;
+  cursor: pointer;
+}
+
+.view-info {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.preview {
+  position: relative;
+  margin-right: 0.5rem;
+}
+
+.timestamp {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: black;
+  color: white;
+  padding: 0.15rem;
+  border-radius: 0.25rem;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.username {
+  font-size: 1.1rem;
+  color: white;
+}
+
+
+.btns {
+  display: flex;
+  justify-content: start;
+  margin: 1rem;
+}
+
+.btns button {
+  font-weight: bold;
+  margin-right: .5rem;
+  margin-left: .5rem;
+}
+
+.button-30 {
+  align-items: center;
+  appearance: none;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.mg-t{
+  margin-top: .4rem;
+}
+
+.ads {
+  padding: 4px;
+  padding-right: 8px;
+  background: white;
+  width: 70%;
+  visibility: hidden;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+@media (min-width: 768px) {
+    
+.ads {
+  visibility: visible;
+  padding: 4px;
+  padding-right: 8px;
+  background: white;
+  width: 70%;
+  margin-bottom: 2rem;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ads__link {
+  display: flex;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.ads__img {
+  width: 80px;
+  min-width: 80px;
+  height: 80px;
+  margin-right: 16px;
+}
+
+.ads__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ads__title {
+  margin: 0;
+}
+.ads__body {
+  margin: 0;
+}
+
+}
+
+@media (min-width: 1400px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    gap: 1rem;
+    margin: 5rem;
+  }
+
+  .title > h3 {
+    text-align: start;
+    margin: .5rem;
+  }
+
+  .btns {
+    display: flex;
+    justify-content: start;
+    margin: 1rem;
+    width: 100%;
+  }
+
+}
+    
